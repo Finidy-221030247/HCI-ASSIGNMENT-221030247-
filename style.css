@@ -1,0 +1,179 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+}
+
+#quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+#question-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+#answer-buttons {
+  list-style: none;
+  margin-top: 2rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.answer-button {
+  font-size: 1.8rem;
+  padding: 1.2rem 3rem;
+  margin: 1rem;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  color: #333;
+}
+
+.answer-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.answer-button.correct {
+  background-color: #249e94;
+  border-color: #7bbd54;
+  color: #fff;
+}
+
+.answer-button.wrong {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+  color: #fff;
+}
+#controls {
+  font-size: 1.8rem;
+  padding: 1.2rem 3rem;
+  margin: 1rem;
+  background-color: #4285f4;
+  border: 2px solid #4285f4;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 2rem;
+  color: #fff;
+}
+
+#controls:hover {
+  background-color: #fff;
+  color: #4285f4;
+}
+
+#start-next-button,
+#end-quiz-button,
+#home-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#start-next-button:hover,
+#end-quiz-button:hover,
+#home-button:hover {
+  background-color: rgb(12, 117, 60);
+}
+
+#next-button {
+  display: none;
+}
+
+table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+  background-color: #333;
+  color: #fff;
+  padding: 1.2rem 3rem;
+}
+
+td {
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 1.2rem 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #333;
+}
+
+p.display {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+  font-style: italic;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-color: #f8f8f8;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p.display.score {
+  font-size: 2.2rem;
+  background-color: #ff07ac;
+  color: #fff;
+}
+
+#pie-chart {
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
+}

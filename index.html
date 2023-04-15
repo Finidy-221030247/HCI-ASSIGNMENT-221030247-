@@ -1,0 +1,65 @@
+<!-- This section contains the HTML code for the quiz application -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Quiz</title>
+    <!-- This link refers to an external stylesheet for the quiz application -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- This div element contains the entire quiz application -->
+    <div id="quiz-container">
+      <h1>Game Quiz</h1>
+      <br />
+      <br />
+      <!-- This form allows the user to input their name and number for the quiz -->
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="number">Number:</label>
+        <input type="text" id="number" name="number" />
+      </form>
+      <br />
+      <br />
+      <!-- This div element contains the timer for the quiz -->
+      <div id="timer">0:00</div>
+      <!-- This div element contains the question and answer buttons for the quiz -->
+      <div id="question-container">
+        <p id="question"></p>
+        <ul id="answer-buttons">
+          <li><button class="answer-button"></button></li>
+          <li><button class="answer-button"></button></li>
+          <li><button class="answer-button"></button></li>
+          <li><button class="answer-button"></button></li>
+        </ul>
+      </div>
+      <!-- This div element contains the control buttons for the quiz -->
+      <div id="controls">
+        <button id="home-button">Home</button>
+        <button id="start-next-button">Start</button>
+        <button id="end-quiz-button">End Quiz</button>
+      </div>
+    </div>
+    <!-- This div element contains the score table and score for the quiz -->
+    <div id="score-container">
+      <p id="score" class="hide"></p>
+      <table id="score-table" class="hide">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <!-- This div element contains the pie chart for the quiz -->
+    <div id="chart-container">
+      <svg id="pie-chart"></svg>
+    </div>
+    <!-- These external JavaScript libraries are used in the quiz application -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
